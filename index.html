@@ -28,25 +28,32 @@
             /></i>
           </button>
         </div>
-        <hr class="hr-line" />
+        <hr class="hr-line mt-2" />
+
         <div
-          class="d-flex justify-content-around"
-          style="margin-top: -20px; margin-left: 10px"
-        >
-          <div class="sidebar-logo">
-            <span style="margin-left: -13px; position: relative"
-              ><img src="./assests/images/Avatar.png" alt=""
-            /></span>
-            <span style="position: absolute; margin: 20px 10px 15px -20px"
-              ><img src="./assests/images/Status Online.png" alt=""
-            /></span>
-            <a href="#" class="text-black mb-3">Designluch</a>
+          class="d-flex justify-content-around avatar-with-online-div"
+          style="margin-left: 10px"
+          >
+          <div class="title-logo">
+            <div class="sidebar-logo">
+              <span style="margin-left: -13px; position: relative"
+                ><img src="./assests/images/Avatar.png" alt=""
+              /></span>
+              <span style="position: absolute; margin: 20px 10px 15px -20px" class="online-status"
+                ><img src="./assests/images/Status Online.png" alt=""
+              /></span>
+            </div>
+
+            <a href="#" class="logo-title text-black mb-3 fw-bold"
+              >Designluch <span>Designer</span>
+            </a>
           </div>
           <button class="toggle-btn" type="button">
             <i class="ms-4"><img src="./assests/images/Vector.png" alt="" /></i>
           </button>
         </div>
-        <hr class="hr-line" />
+        <hr class="hr-line mt-2" />
+
         <ul class="sidebar-nav">
           <li class="sidebar-item">
             <a href="#" class="sidebar-link">
@@ -189,7 +196,7 @@
           </div>
           <div class="navbar-section-div-2 navbar navbar-expand-lg">
             <div class="container-fluid">
-              <div class="ms-5">
+              <div style="margin-left: 200px;">
                 <ul
                   class="navbar-nav me-auto mb-2 mb-lg-0"
                   style="font-weight: bold; font-size: 12px"
@@ -243,13 +250,13 @@
                         >Timeline</a
                       >
                     </li>
-                    <li class="nav-item ms-1">
+                    <li class="nav-item ms-3">
                       <a class="nav-link" href="#">My Task</a>
                     </li>
-                    <li class="nav-item ms-1">
+                    <li class="nav-item ms-3">
                       <a class="nav-link" href="#">Portfolios</a>
                     </li>
-                    <li class="nav-item ms-1">
+                    <li class="nav-item ms-3">
                       <a class="nav-link" href="#">Goals</a>
                     </li>
                   </ul>
@@ -302,16 +309,73 @@
               style="margin-left: 55px"
               width="35"
               height="35"
-              src="./assests/icons//Plus Icon.png"
+              src="./assests/icons/Add Button.png"
               alt=""
             />
           </div>
         </nav>
-        <nav class="navbar-section-3">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
+        <nav class="navbar-section-3 mt-2">
+          <div class="navbar-section-3-sub-div-1 d-flex">
+            <div
+              class="d-flex align-items-center border-end px-4 rounded-start"
+             >
+              <span
+                ><img src="./assests/icons/Dashboard-Icon.png" alt=""
+              /></span>
+              <span class="fw-bold text-muted ms-2">Board View</span>
+            </div>
+            <div class="d-flex align-items-center bg-white px-4 rounded-end">
+              <span><img src="./assests/icons/List-Icon.png" alt="" /></span>
+              <span class="fw-bold text-muted ms-2">List View</span>
+            </div>
+          </div>
+          <div class="navbar-section-3-sub-div-2 d-flex">
+            <div class="d-flex align-items-center border-end px-4">
+              <span><img src="./assests/icons/lock.png" alt="" /></span>
+              <span class="fw-bold text-muted ms-2" style="font-size: 12px"
+                >Limited Access</span
+              >
+              <span class="ms-3"
+                ><img src="./assests/icons/keyboard_arrow_down.png" alt=""
+              /></span>
+            </div>
+            <div class="d-flex align-items-center rounded-end">
+              <span class="fw-bold text-muted ms-3" style="font-size: 12px">Owners</span>
+              <span class="ms-4"
+                ><img src="./assests/icons/twitter-3 1.png" alt="" /></span
+              >
+              <span class="fw-bold ms-4">X Team</span>
+            </div>
+          </div>
+
+          <div class="navbar-section-3-sub-div-3 align-items-center">
+              <form class="d-flex" role="search">
+                <div class="input-container">
+                  <i class="start-icon ms-2"
+                    ><img src="./assests/images/search-icon.png" alt=""
+                  /></i>
+                  <input
+                    class="form-control px-5 w-75 py-2"
+                    type="search"
+                    placeholder="Search Task"
+                    aria-label="Search"
+                  />
+               
+                </div>
+             
+              </form>
+          </div>
+
+          <div class="navbar-section-3-sub-div-4 d-flex justify-content-around align-items-center">
+            <span> <img src="./assests/icons/Icon Button-1.png" alt=""> </span>
+            <span> <img src="./assests/icons/Icon Button-2.png" alt=""> </span>
+            <span> <img src="./assests/icons/Icon Button-3.png" alt=""> </span>
+            <span> <img src="./assests/icons/Icon Button-4.png" alt=""> </span>
+            <span> <img src="./assests/icons/Icon Button-5.png" alt=""> </span>
+           
+          </div>
         </nav>
+
         <div class="d-flex mt-3">
           <h6 class="fw-bold">Backlog Tasks</h6>
           <span
@@ -321,96 +385,1328 @@
           >
         </div>
 
-        <section class="all-card-section">
+        <section class="all-card-section mt-3">
           <div class="container-fluid">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
               <!-- Adjusted grid classes -->
               <div class="col mb-4">
-                <div class="card" style="width: 18rem">
+                <div class="card border-0" style="width: 20rem">
                   <div class="card-body">
-                    <h5 class="card-title">Page "Order" and "Setting"</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      Card subtitle
-                    </h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title">
+                          Page "Order" and "Setting"
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i
+                          ><img src="./assests/images/TickFile.png" alt=""
+                        /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #4cd7f6"
+                        >
+                          4
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">8/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-primary-subtle text-primary">Design</p>
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar1.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=" "
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar3.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/plus five.png"
+                        alt=""
+                      />
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        class="ms-5"
+                        width="25"
+                        height="25"
+                        src="./assests/icons/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #a855f7; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/icons/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #f59e0b; font-size: 14px"
+                        class="text-decoration-none fst-normal ms-2"
+                        >3</i
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- Added margin bottom class for gap -->
 
               <div class="col mb-4">
-                <div class="card" style="width: 18rem">
+                <div class="card border-0" style="width: 20rem">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      Card subtitle
-                    </h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title mt-1">
+                          Create calendar, chat and <br />
+                          email app pages
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i
+                          ><img src="./assests/images/TickFile.png" alt=""
+                        /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #4cd7f6"
+                        >
+                          1
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">5/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 50%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-danger-subtle text-danger">
+                        Development
+                      </p>
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar5.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=" "
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar6.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/plus five.png"
+                        alt=""
+                      />
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        class="ms-5"
+                        width="25"
+                        height="25"
+                        src="./assests/images/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/images/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal ms-2"
+                        >3</i
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- Added margin bottom class for gap -->
               <div class="col mb-4">
-                <div class="card" style="width: 18rem">
+                <div class="card border-0" style="width: 20rem">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      Card subtitle
-                    </h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title mt-1">
+                          Product Design, Figma, Sketch<br />
+                          (Software), Prototype
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i><img src="./assests/icons/task.png" alt="" /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #98a2b2"
+                        >
+                          2
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">3/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 30%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar4.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        style="margin-left: 95px"
+                        class=""
+                        width="25"
+                        height="25"
+                        src="./assests/images/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/images/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >4</i
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- Added margin bottom class for gap -->
               <div class="col mb-4">
-                <div class="card" style="width: 18rem">
+                <div class="card border-0" style="width: 20rem">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      Card subtitle
-                    </h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title mt-1">
+                          Change email option process
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i><img src="./assests/icons/task.png" alt="" /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #98a2b2"
+                        >
+                          2
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">4/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 40%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar4.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=" "
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar2.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/plus five.png"
+                        alt=""
+                      />
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        class="ms-5"
+                        width="25"
+                        height="25"
+                        src="./assests/images/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/images/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >4</i
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Added margin bottom class for gap -->
+              <div class="col mb-4">
+                <div class="card border-0" style="width: 20rem">
+                  <div class="card-body">
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title">
+                          Page "Order" and "Setting"
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i
+                          ><img src="./assests/images/TickFile.png" alt=""
+                        /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #4cd7f6"
+                        >
+                          4
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">8/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-primary-subtle text-primary">Design</p>
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar1.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=" "
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar3.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/plus five.png"
+                        alt=""
+                      />
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        class="ms-5"
+                        width="25"
+                        height="25"
+                        src="./assests/icons/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #a855f7; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/icons/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #f59e0b; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >3</i
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- Added margin bottom class for gap -->
               <div class="col mb-4">
-              Column
+                <div class="card border-0" style="width: 20rem">
+                  <div class="card-body">
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title mt-1">
+                          Create calendar, chat and <br />
+                          email app pages
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i
+                          ><img src="./assests/images/TickFile.png" alt=""
+                        /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #4cd7f6"
+                        >
+                          1
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">5/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 50%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-danger-subtle text-danger">
+                        Development
+                      </p>
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar5.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=" "
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar6.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/plus five.png"
+                        alt=""
+                      />
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        class="ms-5"
+                        width="25"
+                        height="25"
+                        src="./assests/images/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/images/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >3</i
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- Added margin bottom class for gap -->
-              <div class="col mb-4">Column</div>
+              <div class="col mb-4">
+                <div class="card border-0" style="width: 20rem">
+                  <div class="card-body">
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title mt-1">
+                          Product Design, Figma, Sketch<br />
+                          (Software), Prototype
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i><img src="./assests/icons/task.png" alt="" /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #98a2b2"
+                        >
+                          2
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">3/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 30%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar4.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        style="margin-left: 95px"
+                        class=""
+                        width="25"
+                        height="25"
+                        src="./assests/images/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/images/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >4</i
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- Added margin bottom class for gap -->
-              <div class="col mb-4">Column</div>
+              <div class="col mb-4">
+                <div class="card border-0" style="width: 20rem">
+                  <div class="card-body">
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title mt-1">
+                          Change email option process
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i><img src="./assests/icons/task.png" alt="" /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #98a2b2"
+                        >
+                          2
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">4/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 40%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar4.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=" "
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar2.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/plus five.png"
+                        alt=""
+                      />
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        class="ms-5"
+                        width="25"
+                        height="25"
+                        src="./assests/images/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/images/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >4</i
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- Added margin bottom class for gap -->
-              <div class="col mb-4">Column</div>
+              <div class="col mb-4">
+                <div class="card border-0" style="width: 20rem">
+                  <div class="card-body">
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title">
+                          Page "Order" and "Setting"
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i
+                          ><img src="./assests/images/TickFile.png" alt=""
+                        /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #4cd7f6"
+                        >
+                          4
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">8/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-primary-subtle text-primary">Design</p>
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar1.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=" "
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar3.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/plus five.png"
+                        alt=""
+                      />
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        class="ms-5"
+                        width="25"
+                        height="25"
+                        src="./assests/icons/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #a855f7; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/icons/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #f59e0b; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >3</i
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- Added margin bottom class for gap -->
-              <div class="col mb-4">Column</div>
+              <div class="col mb-4">
+                <div class="card border-0" style="width: 20rem">
+                  <div class="card-body">
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title m-1">
+                          Create calendar, chat and <br />
+                          email app pages
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i
+                          ><img src="./assests/images/TickFile.png" alt=""
+                        /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #4cd7f6"
+                        >
+                          1
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">5/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 50%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-danger-subtle text-danger">
+                        Development
+                      </p>
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar5.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=" "
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar6.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/plus five.png"
+                        alt=""
+                      />
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        class="ms-5"
+                        width="25"
+                        height="25"
+                        src="./assests/images/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/images/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal ms-2"
+                        >3</i
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- Added margin bottom class for gap -->
-              <div class="col mb-4">Column</div>
+              <div class="col mb-4">
+                <div class="card border-0" style="width: 20rem">
+                  <div class="card-body">
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title mt-1">
+                          Product Design, Figma, Sketch<br />
+                          (Software), Prototype
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i><img src="./assests/icons/task.png" alt="" /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #98a2b2"
+                        >
+                          2
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">3/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 30%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar4.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        style="margin-left: 95px"
+                        class=""
+                        width="25"
+                        height="25"
+                        src="./assests/images/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/images/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >4</i
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- Added margin bottom class for gap -->
-              <div class="col mb-4">Column</div>
-              <!-- Added margin bottom class for gap -->
-              <div class="col mb-4">Column</div>
+              <div class="col mb-4">
+                <div class="card border-0" style="width: 20rem">
+                  <div class="card-body">
+                    <span
+                      class="d-flex justify-content-between align-items-center mb-4"
+                    >
+                      <span
+                        ><h5 class="card-title mt-1">
+                          Change email option process
+                        </h5></span
+                      >
+                      <span class="d-flex justify-content-between me-2">
+                        <i><img src="./assests/icons/task.png" alt="" /></i>
+                        <p
+                          class="ms-3 mt-1 fw-bold"
+                          style="font-size: 12px; color: #98a2b2"
+                        >
+                          2
+                        </p>
+                      </span>
+                    </span>
+
+                    <span
+                      style="margin-top: 10px"
+                      class="d-flex justify-content-between"
+                    >
+                      <p class="progress-bar-text text-muted">Progress</p>
+                      <p class="progress-bar-number text-muted">4/10</p>
+                    </span>
+                    <span class="card-text">
+                      <div
+                        class="progress"
+                        role="progressbar"
+                        aria-label="Example 20px high"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="height: 8px; margin-top: -12px"
+                      >
+                        <div class="progress-bar" style="width: 40%"></div>
+                      </div>
+                    </span>
+
+                    <div class="mt-2">
+                      <p class="badge bg-warning-subtle text-warning">
+                        Backlog
+                      </p>
+                    </div>
+
+                    <div class="pb-3">
+                      <img
+                        class=""
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar4.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=" "
+                        style="margin-right: -15px"
+                        width="35"
+                        height="35"
+                        src="./assests/images/Avatar2.png"
+                        alt=""
+                      />
+
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/plus five.png"
+                        alt=""
+                      />
+                      <img
+                        class=""
+                        width="35"
+                        height="35"
+                        src="./assests/icons/Add Button.png"
+                        alt=""
+                      />
+                      <img
+                        class="ms-5"
+                        width="25"
+                        height="25"
+                        src="./assests/images/file_present.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold"
+                        >2</i
+                      >
+                      <img
+                        class="ms-2"
+                        width="25"
+                        height="25"
+                        src="./assests/images/message.png"
+                        alt=""
+                      />
+                      <i
+                        style="color: #98a2b2; font-size: 14px"
+                        class="text-decoration-none fst-normal fw-bold ms-2"
+                        >4</i
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- Added margin bottom class for gap -->
             </div>
           </div>
