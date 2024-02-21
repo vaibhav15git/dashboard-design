@@ -254,6 +254,9 @@ width: 20%;
   /* border: 1px solid blue; */
 width: 22%;
 }
+.third-nav-sub-div-title{
+  font-size: 12px;
+}
 
 .all-card-section{
 margin-left: -10px;
